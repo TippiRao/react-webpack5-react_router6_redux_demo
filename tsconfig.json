@@ -22,7 +22,8 @@
     ],
     "downlevelIteration": true,
   },
-  "include": [
-    "src"
+  "includes": [
+    "src",
+    "./externals.d.ts"
   ]
 }

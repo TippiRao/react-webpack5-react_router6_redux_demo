@@ -1,16 +1,19 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
 import { Menu } from "antd";
+import styles from "./basicLayout.less";
 import SiteMenu from "../menus/siteMenu";
 
 const BasicLayout = (props) => {
   return (
     <>
-      <header>
+      <header className={styles.layoutHeader}>
         <SiteMenu />
       </header>
-
-      <Outlet />
+      <div className={styles.layoutBody}>
+        <Outlet />
+      </div>
+      <footer>copyright Tippi 2022</footer>
     </>
   );
 };
