@@ -17,8 +17,8 @@
     "@babel/preset-react": "^7.16.7",
     "@babel/plugin-proposal-decorators": "^7.17.8",
     "@babel/plugin-proposal-class-properties": "^7.16.7",
-    "@types/react": "^17.0.41",
-    "@types/react-dom": "^17.0.14",
+    "@types/react": "^18.0.14",
+    "@types/react-dom": "^18.0.5",
     "babel-loader": "^8.2.3",
     "clean-webpack-plugin": "^4.0.0",
     "html-webpack-plugin": "^5.5.0",
@@ -37,20 +37,25 @@
     "webpack-merge": "^5.8.0",
     "happypack": "^5.0.1",
     "prettier": "^2.6.0",
+    "eslint": "^7.32.0",
+    "stylelint": "^14.9.1",
     "copy-webpack-plugin": "^10.2.4",
     "antd-dayjs-webpack-plugin": "^1.0.6",
-    "cross-env": "^7.0.3"
+    "cross-env": "^7.0.3",
+    "sass": "^1.53.0",
+    "sass-loader": "^13.0.2"
   },
   "dependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "redux": "^4.1.2",
-    "react-redux": "^7.2.6",
-    "antd": "^4.19.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "redux": "^4.2.0",
+    "react-redux": "^8.0.2",
+    "antd": "^4.21.4",
     "@ant-design/icons": "^4.7.0",
-    "dayjs": "^1.11.0",
-    "@reduxjs/toolkit": "^1.8.0",
-    "react-router-dom": "^6.2.2",
-    "react-loadable": "^5.5.0"
+    "dayjs": "^1.11.3",
+    "@reduxjs/toolkit": "^1.8.3",
+    "react-router-dom": "^6.3.0",
+    "react-loadable": "^5.5.0",
+    "ahooks": "^3.5.1"
   }
 }
