@@ -22,7 +22,7 @@ const Counter = () => {
   return (
     <div className={styles.homeWrapper}>
       <Button onClick={incrementClick} type={"primary"} icon={<PlusOutlined />}>
-        新增
+        新增31
       </Button>
       <Button onClick={decrementClick} icon={<MinusOutlined />}>
         减少

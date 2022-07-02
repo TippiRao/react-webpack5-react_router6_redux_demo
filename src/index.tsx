@@ -18,3 +18,8 @@ const Index = () => {
 };
 
 ReactDom.render(<Index />, document.getElementById("app"));
+
+// 热更新, 调用module.hot.accept接口
+if (module && module.hot) {
+    module.hot.accept();
+}
