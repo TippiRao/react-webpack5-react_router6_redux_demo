@@ -10,6 +10,6 @@ module.exports = merge(commonConfig, {
     port: 9000,
     historyApiFallback: true,
     //启动hrm 功能
-    hot: true
+    hot: true,
   },
 });

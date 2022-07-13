@@ -30,14 +30,6 @@ module.exports = {
       },
       {
         test: /\.less$/,
-        // oneOf: [
-        //   {
-        //     loader: "css-loader",
-        //     resourceQuery: /css_modules/,
-        //     options: { modules: true },
-        //   },
-        //   { loader: "css-loader" },
-        // ],
         use: [
           devMode ? "style-loader" : MiniCssExtractPlugin.loader,
           {
@@ -49,21 +41,15 @@ module.exports = {
               },
             },
           },
-          // "css-loader",
           "postcss-loader",
           "less-loader",
         ],
         exclude: [path.resolve(__dirname, "..", "node_modules")], //node_modules 里面的样式不用当前rule 进行处理
       },
-
       {
         test: /\.css$/,
         use: [
           devMode ? "style-loader" : MiniCssExtractPlugin.loader,
-          // {
-          //   loader: "css-loader",
-          //   options: { modules: true },
-          // },
           "css-loader",
           "postcss-loader",
         ],
@@ -71,9 +57,23 @@ module.exports = {
       },
       {
         test: /\.(png|jpe?g|gif|svg|mp4|webm|ogg|mp3|wav|flac|aac|woff2?|eot|ttf|otf)(\?.*)?$/,
-        use: ["url-loader"],
+        loader: "url-loader",
         include: [srcDir],
+        options: {
+          limit: 8 * 1024,
+          name: "[hash:10].[ext]",
+          outputPath: "imgs",
+        },
       },
+      // {
+      //   //处理其他资源
+      //   exclude:
+      //     /\.(tsx?|js|less|css|png|jpe?g|gif|svg|mp4|webm|ogg|mp3|wav|flac|aac|woff2?|eot|ttf|otf)/,
+      //   loader: "file-loader",
+      //   options: {
+      //     name: "[hash:10].[ext]",
+      //   },
+      // },
     ],
   },
   resolve: {
