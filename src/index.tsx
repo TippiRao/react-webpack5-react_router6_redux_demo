@@ -18,7 +18,7 @@ const Index = () => {
   );
 };
 
-ReactDom.render(<Index />, document.getElementById("app"));
+ReactDom.render(<Index />, document.getElementById("app") as HTMLElement);
 
 // 热更新, 调用module.hot.accept接口
 if (module && module.hot) {

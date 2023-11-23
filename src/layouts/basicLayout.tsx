@@ -6,15 +6,18 @@ import SiteMenu from "../menus/siteMenu";
 
 const BasicLayout = (props) => {
   return (
-    <>
-      <header className={styles.layoutHeader}>
+    <div className={styles["basic-layout"]}>
+      <aside className={styles["basic-layout-header"]}>
+        <div className={styles["basic-layout-header-logo"]}>
+          企业自主双控平台
+        </div>
         <SiteMenu />
-      </header>
-      <div className={styles.layoutBody}>
+      </aside>
+      <div className={styles["basic-layout-body"]}>
         <Outlet />
       </div>
-      <footer>copyright Tippi 2022</footer>
-    </>
+      {/* <footer>copyright Tippi 2022</footer> */}
+    </div>
   );
 };
 

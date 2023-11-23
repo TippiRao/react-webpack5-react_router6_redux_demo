@@ -1,11 +1,17 @@
-.layoutHeader {
-  position: fixed;
-  height: 50px;
-  top: 0;
-  left: 0;
-  z-index: 999;
-  width: 100%;
-}
-.layoutBody {
-  margin-top: 50px;
+.basic-layout {
+  display: flex;
+  flex-direction: row;
+  &-header {
+    height: 100vh;
+    z-index: 999;
+    width: 200px;
+    &-logo {
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+    }
+  }
+  &-body {
+    margin-top: 50px;
+  }
 }

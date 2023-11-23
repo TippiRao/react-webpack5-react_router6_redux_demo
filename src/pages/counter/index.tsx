@@ -2,8 +2,8 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { PlusOutlined, MinusOutlined } from "@ant-design/icons";
 import { decrement, increment } from "../../stores/slice/counterSlice";
-import { Button } from "element-react";
-// import { Button } from "antd";
+// import { Button } from "element-react";
+import { Button } from "antd";
 import styles from "./index.less";
 // import "./index.less";
 
